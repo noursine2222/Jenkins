@@ -17,7 +17,7 @@ pipeline {
           stage('Compile') {
             steps {
                 script {
-                dir('Jenkins/stage_project'){
+                dir('Jenkins'){
                     sh 'mvn clean compile'
                     }
                 }
